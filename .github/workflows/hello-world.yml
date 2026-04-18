@@ -1,0 +1,8 @@
+name: My First CI
+on: [push] # コードを保存（プッシュ）したら実行
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest # 仮想のLinuxマシンを起動
+    steps:
+      - name: Run a message
+        run: echo "Hello, CI/CD world!" # 画面に文字を出す
